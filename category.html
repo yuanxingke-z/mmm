@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <!-- 设置视口 -->
+  <meta name='viewport' content='width=device-width, user-scalable=no,
+  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/category.css">
+</head>
+
+<body>
+  <div class="mmm_container">
+    <!-- 头部 -->
+    <header>
+      <a class="header_logo" href="index.html">
+        <img src="./images/header_logo.png">
+      </a>
+      <a class="header_app" href="#">
+        <img src="./images/header_app.png">
+      </a>
+    </header>
+    <!-- 搜索栏 -->
+    <section class="search">
+      <div class="search_content">
+        <input class="search_txt" type="text" placeholder="请输入你想比价的商品">
+      </div>
+      <button class="search_button">搜索</button>
+    </section>
+    <!-- 分类页导航 -->
+    <div class="category_nav">
+      <ul class="first_list">
+        <!-- 挖个坑 -->
+      </ul>
+    </div>
+  </div>
+  <!-- 尾部 -->
+  <footer>
+    <div class="footer_link clearfix">
+      <a href="login.html" class="login">登录</a>
+      <a href="resign.html" class="resign">注册</a>
+      <a href="#" class="backTop"><img src="./images/top.jpg" alt="">返回顶部</a>
+    </div>
+    <div class="app_downLoad">
+      <p class="first_line">
+        <a class="download" href="#">手机APP下载</a>
+        <a class="mobile" href="#">慢慢买手机版 </a>
+        -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </footer>
+  </div>
+
+  <!-- 准备分类页模板 -->
+  <script type="text/html" id="firstTpl">
+    {{each result v i }}
+      <li >
+        <a class="dropDown" data-titleid={{v.titleId}}  href="#">
+          <span>{{v.title}}</span>
+        </a>
+        <ul class="second_list clearfix">
+            <!-- 再挖个坑 -->
+        </ul>
+      </li>
+     {{/each}}
+  </script>
+
+  <!-- 准备二级分类列表模板 -->
+  <script type="text/html" id="secondTpl">
+    {{each result v i }}
+    <li><a href="#">{{v.category}}</a></li>
+    {{/each}}
+  </script>
+
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/category.js"></script>
+</body>
+
+</html>

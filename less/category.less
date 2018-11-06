@@ -1,0 +1,57 @@
+//引入公共样式
+@import './common.less';
+
+//分类页导航
+.category_nav {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  .first_list {
+    background-color: #EDEDED;
+
+    >li {
+
+      >a {
+        display: block;
+        height: 40px;
+        padding-left: 16px;
+        border-bottom: 1px solid #ccc;
+
+        span {
+          line-height: 40px;
+          font-size: 16px;
+          color: #000;
+        }
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .second_list {
+    display: none;
+    background-color: #F9F9F9;
+
+    &.active {
+      display: block;
+    }
+
+    >li {
+      float: left;
+      width: 33.33%;
+      border-right: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+
+      a {
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: #333;
+      }
+    }
+  }
+    
+}

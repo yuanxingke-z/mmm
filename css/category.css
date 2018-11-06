@@ -124,106 +124,44 @@ html footer .app_downLoad .first_line .mobile,
 body footer .app_downLoad .first_line .mobile {
   color: #000;
 }
-nav {
-  margin-top: 10px;
-  background-color: #fff;
-  overflow: hidden;
-}
-nav li {
-  float: left;
-  width: 25%;
-}
-nav li:nth-last-child(-n+4) {
-  height: 0;
-  transform: scale(0);
-  transition: all 1s;
-}
-nav li:nth-last-child(-n+4).active {
-  height: auto;
-  transform: scale(1);
-}
-nav li a {
-  display: block;
-  text-align: center;
-  padding: 10px;
-}
-nav li a img {
-  width: 50px;
-  height: 50px;
-  margin: 0 auto;
-}
-nav li a p {
-  margin-top: 5px;
-  text-align: center;
-  font-size: 12px;
-  color: #000;
-}
-.sale_main {
-  margin-top: 5px;
-  background-color: #fff;
-}
-.sale_main .sale_title {
-  height: 35px;
-  background-color: #FFA42D;
-  padding-left: 10px;
-}
-.sale_main .sale_title .more {
-  width: 20px;
-  height: 20px;
-  margin-top: 8px;
-  margin-right: 10px;
-}
-.sale_main .sale_title span {
-  line-height: 35px;
-  font-size: 14px;
-  color: #fff;
-}
-.sale_main .sale_product .product_item {
-  height: 130px;
-  border-bottom: 1px solid #ccc;
-  padding: 15px 10px;
-}
-.sale_main .sale_product .product_item img {
-  float: left;
-  width: 100px;
-  height: 100px;
-}
-.sale_main .sale_product .product_item .product_des {
-  height: 100px;
-  overflow: hidden;
-  padding-left: 20px;
-}
-.sale_main .sale_product .product_item .product_des .des_title {
-  min-height: 57px;
-}
-.sale_main .sale_product .product_item .product_des .des_title .price {
-  color: #FF8300;
-}
-.sale_main .sale_tips {
-  height: 32px;
-  margin: 10px;
+.category_nav {
   border: 1px solid #ccc;
-  background-color: #FAFAFA;
   border-radius: 5px;
-  line-height: 32px;
-  text-align: center;
+}
+.category_nav .first_list {
+  background-color: #EDEDED;
+}
+.category_nav .first_list > li > a {
+  display: block;
+  height: 40px;
+  padding-left: 16px;
+  border-bottom: 1px solid #ccc;
+}
+.category_nav .first_list > li > a span {
+  line-height: 40px;
+  font-size: 16px;
   color: #000;
-  font-size: 14px;
 }
-.brandRank {
-  margin-top: 10px;
-  height: 35px;
-  background-color: #FF9E20;
-  padding-left: 10px;
+.category_nav .first_list > li:last-child {
+  border-bottom: none;
 }
-.brandRank .more {
-  width: 20px;
-  height: 20px;
-  margin-top: 8px;
-  margin-right: 10px;
+.category_nav .second_list {
+  display: none;
+  background-color: #F9F9F9;
 }
-.brandRank span {
-  line-height: 35px;
-  font-size: 14px;
-  color: #fff;
+.category_nav .second_list.active {
+  display: block;
+}
+.category_nav .second_list > li {
+  float: left;
+  width: 33.33%;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.category_nav .second_list > li a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #333;
 }

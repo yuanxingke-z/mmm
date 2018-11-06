@@ -5,10 +5,23 @@
 nav {
   margin-top: 10px;
   background-color: #fff;
+  overflow: hidden;
 
   li {
     float: left;
     width: 25%;
+
+    &:nth-last-child(-n+4) {
+      height: 0;
+      transform: scale(0);
+      transition: all 1s;
+      
+      &.active {
+        height: auto;
+        transform: scale(1);
+      }
+    }
+
 
     a {
       display: block;
@@ -38,21 +51,21 @@ nav {
   background-color: #fff;
 
   .sale_title {
-    height: 35rem/@basic;
+    height: 35px;
     background-color: #FFA42D;
     padding-left: 10px;
 
     .more {
-      width: 20rem/@basic;
-      height: 20rem/@basic;
-      margin-top: 8rem/@basic;
-      margin-right: 10rem/@basic;
+      width: 20px;
+      height: 20px;
+      margin-top: 8px;
+      margin-right: 10px;
       
     }
 
     span {
-      line-height: 35rem/@basic;
-      font-size: 14rem/@basic;
+      line-height: 35px;
+      font-size: 14px;
       color: #fff;
     }
   }
@@ -61,59 +74,64 @@ nav {
     
 
     .product_item {
-      height: 130rem/@basic;
+      height: 130px;
       border-bottom: 1px solid #ccc;
-      padding: 15rem/@basic 10rem/@basic;
+      padding: 15px 10px;
       
-      .product_pic {
-        width: 100rem/@basic;
-        height: 100rem/@basic;
+      img {
+        float: left;
+        width: 100px;
+        height: 100px;
       }
       
       .product_des {
-        height: 100rem/@basic;
+        height: 100px;
         overflow: hidden;
-        padding-left: 20rem/@basic;
+        padding-left: 20px;
 
         .des_title {
-          min-height: 57rem/@basic;
+          min-height: 57px;
+
+          .price {
+            color: #FF8300;
+          }
         }
       }
     }
   }
 
   .sale_tips {
-    height: 32rem/@basic;
-    margin: 10rem/@basic;
+    height: 32px;
+    margin: 10px;
     border: 1px solid #ccc;
     background-color: #FAFAFA;
-    border-radius: 5rem/@basic;
-    line-height: 32rem/@basic;
+    border-radius: 5px;
+    line-height: 32px;
     text-align: center;
     color: #000;
-    font-size: 14rem/@basic;
+    font-size: 14px;
   }
 
 }
 
 //品牌排名
 .brandRank {
-  margin-top: 10rem/@basic;
-  height: 35rem/@basic;
+  margin-top: 10px;
+  height: 35px;
   background-color: #FF9E20;
   padding-left: 10px;
 
   .more {
-    width: 20rem/@basic;
-    height: 20rem/@basic;
-    margin-top: 8rem/@basic;
-    margin-right: 10rem/@basic;
+    width: 20px;
+    height: 20px;
+    margin-top: 8px;
+    margin-right: 10px;
     
   }
 
   span {
-    line-height: 35rem/@basic;
-    font-size: 14rem/@basic;
+    line-height: 35px;
+    font-size: 14px;
     color: #fff;
   }
 }

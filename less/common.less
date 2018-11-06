@@ -1,77 +1,88 @@
-// 声明变量
-@design:750px;
-@basic:@design/10;
+
 
 // 整体布局
 html,body {
   height: 100%;
   background-color: #F1F1F1;
-
+  
   .mmm_container {
-    height: 800px;
+    height: 100%px;
     margin: 0 auto;
     font-size: 14px;
 
     header {
       width: 100%;
-      height: 50rem/@basic;
+      height: 50px;
       background-color: #FF841D;
       position: relative;
+      
+        .header_logo {
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          transform: translateY(-50%);
 
-      .header_logo {
-        position: absolute;
-        left: 10px;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 185.5rem/@basic;
-        height: 25rem/@basic;
+          img {
+            width: 185.5px;
+            height: 25px;
+          }
+        }
+  
+        .header_app {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+
+          img {
+            width: 34px;
+            height: 34px;
+          }
+        }
       }
 
-      .header_app {
-        position: absolute;
-        right: 10px;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 34rem/@basic;
-        height: 34rem/@basic;
-      }
     }
 
     .search {
-      height: 50rem/@basic;
-      padding-right: 70rem/@basic;
+      height: 50px;
       background-color: #fff;
       position: relative;
-      padding: 10rem/@basic;
+      padding: 10px;
       
       .search_button {
         position: absolute;
-        right: 10rem/@basic;
-        top: 10rem/@basic;
-        width: 63rem/@basic;
-        height: 30rem/@basic;
-        line-height: 30rem/@basic;
-        border-radius: 15rem/@basic;
+        right: 10px;
+        top: 10px;
+        width: 63px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 15px;
         background-color: #FF841D;
-        font-size: 16rem/@basic;
+        font-size: 16px;
         color: #fff;
       }
 
-      .search_txt {
-        display: block;
-        width: 90%;
-        height: 30rem/@basic;
-        background-color: #F1F1F1;
-        border-radius: 15rem/@basic;
-        padding-left: 20rem/@basic;
+      .search_content {
+        height: 30px;
+        padding-right: 70px;
 
+        .search_txt {
+          display: block;
+          width: 100%;
+          height: 30px;
+          background-color: #F1F1F1;
+          border-radius: 15px;
+          padding-left: 20px;
+  
+        }
       }
+
     }
 
     footer {
-      margin-top: 25rem/@basic;
+      margin-top: 25px;
       width: 100%;
-      height: 94rem/@basic;
+      height: 94px;
       background-color: #EFEFEF;
 
       .footer_link {
@@ -81,20 +92,20 @@ html,body {
           > a {
           float: left;
           width: 33.33%;
-          height: 34rem/@basic;
+          height: 34px;
           text-align: center;
-          line-height: 32rem/@basic;
+          line-height: 32px;
           color: #000;
           border-right: 1px solid #ccc;
-          font-size: 14rem/@basic;
+          font-size: 14px;
         }
 
         >a:last-child {
           border-right: none;
 
           img {
-            width: 15rem/@basic;
-            height: 15rem/@basic;
+            width: 15px;
+            height: 15px;
             display: inline-block;
           }
         }
@@ -102,10 +113,10 @@ html,body {
 
       .app_downLoad {
         text-align: center;
-        font-size: 12rem/@basic;
+        font-size: 12px;
 
         .first_line {
-          margin-top: 12rem/@basic;
+          margin-top: 12px;
 
           .download {
             color: red;
@@ -120,4 +131,3 @@ html,body {
     }
   }
 
-}
