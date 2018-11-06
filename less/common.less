@@ -1,0 +1,123 @@
+// 声明变量
+@design:750px;
+@basic:@design/10;
+
+// 整体布局
+html,body {
+  height: 100%;
+  background-color: #F1F1F1;
+
+  .mmm_container {
+    height: 800px;
+    margin: 0 auto;
+    font-size: 14px;
+
+    header {
+      width: 100%;
+      height: 50rem/@basic;
+      background-color: #FF841D;
+      position: relative;
+
+      .header_logo {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 185.5rem/@basic;
+        height: 25rem/@basic;
+      }
+
+      .header_app {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 34rem/@basic;
+        height: 34rem/@basic;
+      }
+    }
+
+    .search {
+      height: 50rem/@basic;
+      padding-right: 70rem/@basic;
+      background-color: #fff;
+      position: relative;
+      padding: 10rem/@basic;
+      
+      .search_button {
+        position: absolute;
+        right: 10rem/@basic;
+        top: 10rem/@basic;
+        width: 63rem/@basic;
+        height: 30rem/@basic;
+        line-height: 30rem/@basic;
+        border-radius: 15rem/@basic;
+        background-color: #FF841D;
+        font-size: 16rem/@basic;
+        color: #fff;
+      }
+
+      .search_txt {
+        display: block;
+        width: 90%;
+        height: 30rem/@basic;
+        background-color: #F1F1F1;
+        border-radius: 15rem/@basic;
+        padding-left: 20rem/@basic;
+
+      }
+    }
+
+    footer {
+      margin-top: 25rem/@basic;
+      width: 100%;
+      height: 94rem/@basic;
+      background-color: #EFEFEF;
+
+      .footer_link {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+
+          > a {
+          float: left;
+          width: 33.33%;
+          height: 34rem/@basic;
+          text-align: center;
+          line-height: 32rem/@basic;
+          color: #000;
+          border-right: 1px solid #ccc;
+          font-size: 14rem/@basic;
+        }
+
+        >a:last-child {
+          border-right: none;
+
+          img {
+            width: 15rem/@basic;
+            height: 15rem/@basic;
+            display: inline-block;
+          }
+        }
+      }
+
+      .app_downLoad {
+        text-align: center;
+        font-size: 12rem/@basic;
+
+        .first_line {
+          margin-top: 12rem/@basic;
+
+          .download {
+            color: red;
+          }
+
+          .mobile {
+            color: #000;
+          }
+        }
+      }
+
+    }
+  }
+
+}
