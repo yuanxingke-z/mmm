@@ -124,53 +124,72 @@ html footer .app_downLoad .first_line .mobile,
 body footer .app_downLoad .first_line .mobile {
   color: #000;
 }
-.category_nav {
-  border: 1px solid #ccc;
-  border-radius: 5px;
+header {
+  padding-left: 50px;
+  padding-right: 50px;
 }
-.category_nav .first_list {
-  background-color: #EDEDED;
+header .header_logo {
+  width: 50px;
+  height: 50px;
+  background: url('../images/icon_bar.png') no-repeat -92px 2px;
+  background-size: 220px 132px;
 }
-.category_nav .first_list > li > a {
-  display: block;
-  height: 40px;
-  padding-left: 16px;
+header h3 {
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+.productControl {
+  width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.productControl .sale_product .product_item {
+  height: 130px;
   border-bottom: 1px solid #ccc;
-  position: relative;
+  padding: 15px 10px;
 }
-.category_nav .first_list > li > a span {
-  line-height: 40px;
-  font-size: 16px;
-  color: #000;
+.productControl .sale_product .product_item img {
+  float: left;
+  width: 100px;
+  height: 100px;
 }
-.category_nav .first_list > li > a .down {
-  position: absolute;
-  right: 10px;
-  top: 14px;
-  width: 24px;
-  height: 12px;
-  background: url('../images/icon_bar.png') no-repeat -350px 0;
+.productControl .sale_product .product_item .product_des {
+  height: 100px;
+  overflow: hidden;
+  padding-left: 20px;
 }
-.category_nav .first_list > li:last-child {
-  border-bottom: none;
+.productControl .sale_product .product_item .product_des .des_title {
+  min-height: 57px;
 }
-.category_nav .second_list {
-  display: none;
-  background-color: #F9F9F9;
+.productControl .sale_product .product_item .product_des .des_title .price {
+  color: #FF8300;
 }
-.category_nav .second_list.active {
-  display: block;
+.productControl .paginator {
+  height: 50px;
+  padding-top: 10px;
 }
-.category_nav .second_list > li {
+.productControl .paginator span {
   float: left;
   width: 33.33%;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-}
-.category_nav .second_list > li a {
-  display: block;
-  height: 40px;
-  line-height: 40px;
   text-align: center;
-  color: #333;
+}
+.productControl .paginator span button {
+  height: 36px;
+  width: 80px;
+  background-color: #E1E1E1;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  line-height: 36px;
+  box-shadow: 2px 2px 5px #ccc;
+}
+.productControl .paginator span #page {
+  height: 36px;
+  width: 90px;
+  border: 1px solid #ccc;
+  text-align: center;
+  outline: none;
+  padding-left: 25px;
 }

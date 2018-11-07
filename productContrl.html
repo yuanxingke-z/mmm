@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <!-- 设置视口 -->
+  <meta name='viewport' content='width=device-width, user-scalable=no,
+  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/productContrl.css">
+</head>
+
+<body>
+  <div class="mmm_container">
+    <!-- 头部 -->
+    <header>
+      <a class="header_logo" href="javascript:history.go(-1);">
+      </a>
+      <h3>省钱控 - 最新优惠</h3>
+      <a class="header_app" href="#">
+        <img src="./images/header_app.png">
+      </a>
+    </header>
+
+    <div class="productControl">
+      <!-- 折扣商品详情 -->
+      <div class="sale_product">
+        <!-- 挖个坑 -->
+      </div>
+      <div class="paginator">
+        <span><button id="prev">上一页</button></span>
+        <span>
+          <select name="page" id="page">
+            <!-- 再挖个坑 -->
+          </select>
+        </span>
+        <span><button id="next">下一页</button></span>
+      </div>
+    </div>
+
+
+    <!-- 尾部 -->
+    <footer>
+      <div class="footer_link clearfix">
+        <a href="login.html" class="login">登录</a>
+        <a href="resign.html" class="resign">注册</a>
+        <a href="#top" class="backTop"><img src="./images/top.jpg" alt="">返回顶部</a>
+      </div>
+      <div class="app_downLoad">
+        <p class="first_line">
+          <a class="download" href="#">手机APP下载</a>
+          <a class="mobile" href="#">慢慢买手机版 </a>
+          -- 掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- 准备折扣商品渲染模板 -->
+  <script type="text/html" id="productTpl">
+      {{each result v i}}
+      <div class="product_item" data-productid="{{v.productId}}">
+         {{# v.productImg2}}
+          <!-- <img class="fl product_pic" src="" alt=""> -->
+          <div class="product_des">
+            <div class="des_title">
+              {{v.productName}} <span class="price">{{v.productPinkage}}</span>
+            </div>
+            <span class="mall fl">{{v.productFrom}} | {{v.productTime}}</span>
+            <span class="row fr">{{v.productComCount.substr(1,1)}}</span>
+          </div>
+        </div> 
+      {{/each}}
+     
+  </script>
+
+  <!-- 分页渲染 -->
+  <script type="text/html" id="pageTpl">
+    {{each total v i}}
+    <option value="{{i}}"{{i == page ? 'selected': ''}}>{{i+1}}/{{total.length}}</option>
+    {{/each}}
+  </script>
+
+
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/productContrl.js"></script>
+</body>
+
+</html>

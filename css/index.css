@@ -200,6 +200,7 @@ nav li a p {
   color: #FF8300;
 }
 .sale_main .sale_tips {
+  display: block;
   height: 32px;
   margin: 10px;
   border: 1px solid #ccc;

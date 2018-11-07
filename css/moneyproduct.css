@@ -124,53 +124,139 @@ html footer .app_downLoad .first_line .mobile,
 body footer .app_downLoad .first_line .mobile {
   color: #000;
 }
-.category_nav {
-  border: 1px solid #ccc;
+header {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+header .header_logo {
+  width: 50px;
+  height: 50px;
+  background: url('../images/icon_bar.png') no-repeat -92px 2px;
+  background-size: 220px 132px;
+}
+header h3 {
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+.product_content {
+  padding: 10px;
+  background-color: #FEFEFE;
+}
+.product_content h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  line-height: 40px;
+}
+.product_content h4 {
+  line-height: 40px;
+  font-size: 12px;
+}
+.product_content .product_des {
+  font-size: 16px;
+  line-height: 28px;
+}
+.product_content .product_des .rightImg {
+  float: right;
+  width: 120px;
+}
+.product_content .product_des .downImg {
+  padding-bottom: 20px;
+}
+.product_content .product_des .downImg img {
+  width: 350px;
+  height: 350px;
+  height: 100%;
+}
+.product_content .city {
+  margin: 0 auto;
+  width: 136px;
+  background-color: #fff;
+  font-size: 12px;
+  color: #000;
+  box-shadow: 0 0 60px #ccc;
+}
+.product_content .city li {
+  padding: 0 10px 10px;
+}
+.product_content .city li a {
+  display: block;
+  border-bottom: 1px dashed #ccc;
+}
+.product_content .city li a strong {
+  float: right;
+  color: #FF9000;
+  font-weight: normal;
+}
+.product_content .goBuy {
+  height: 30px;
+  margin: 20px 10px;
+}
+.product_content .goBuy a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: #FF9000;
   border-radius: 5px;
 }
-.category_nav .first_list {
-  background-color: #EDEDED;
+.code {
+  margin: 20px 10px;
 }
-.category_nav .first_list > li > a {
-  display: block;
-  height: 40px;
-  padding-left: 16px;
-  border-bottom: 1px solid #ccc;
-  position: relative;
+.comment {
+  background-color: #fff;
+  padding: 10px;
 }
-.category_nav .first_list > li > a span {
-  line-height: 40px;
+.comment .tit {
   font-size: 16px;
+  line-height: 40px;
   color: #000;
 }
-.category_nav .first_list > li > a .down {
-  position: absolute;
-  right: 10px;
-  top: 14px;
-  width: 24px;
-  height: 12px;
-  background: url('../images/icon_bar.png') no-repeat -350px 0;
+.comment .reply {
+  border: 2px solid #eee;
 }
-.category_nav .first_list > li:last-child {
-  border-bottom: none;
+.comment .reply textarea {
+  height: 80px;
+  width: 100%;
+  font-size: 14px;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
-.category_nav .second_list {
-  display: none;
-  background-color: #F9F9F9;
+.comment .reply .ctrl {
+  text-align: right;
 }
-.category_nav .second_list.active {
-  display: block;
-}
-.category_nav .second_list > li {
-  float: left;
-  width: 33.33%;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-}
-.category_nav .second_list > li a {
-  display: block;
+.comment .reply .ctrl input {
+  width: 100px;
   height: 40px;
-  line-height: 40px;
-  text-align: center;
-  color: #333;
+  background-color: #FF841D;
+  font-size: 16px;
+  color: #fff;
+}
+.comment .list li {
+  padding: 20px 10px;
+}
+.comment .list img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+.comment .list .userimg {
+  float: left;
+}
+.comment .list .con {
+  overflow: hidden;
+  padding-left: 20px;
+}
+.comment .list .con .username {
+  float: left;
+  font-size: 14px;
+  color: #5997C0;
+}
+.comment .list .con .time {
+  float: right;
+  font-size: 12px;
 }
