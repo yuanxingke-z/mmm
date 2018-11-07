@@ -1,0 +1,222 @@
+html,
+body {
+  height: 100%;
+  background-color: #F1F1F1;
+}
+html .mmm_container,
+body .mmm_container {
+  height: 100%px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+html .mmm_container header,
+body .mmm_container header {
+  width: 100%;
+  height: 50px;
+  background-color: #FF841D;
+  position: relative;
+}
+html .mmm_container header .header_logo,
+body .mmm_container header .header_logo {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+html .mmm_container header .header_logo img,
+body .mmm_container header .header_logo img {
+  width: 185.5px;
+  height: 25px;
+}
+html .mmm_container header .header_app,
+body .mmm_container header .header_app {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+html .mmm_container header .header_app img,
+body .mmm_container header .header_app img {
+  width: 34px;
+  height: 34px;
+}
+html .search,
+body .search {
+  height: 50px;
+  background-color: #fff;
+  position: relative;
+  padding: 10px;
+}
+html .search .search_button,
+body .search .search_button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 63px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  background-color: #FF841D;
+  font-size: 16px;
+  color: #fff;
+}
+html .search .search_content,
+body .search .search_content {
+  height: 30px;
+  padding-right: 70px;
+}
+html .search .search_content .search_txt,
+body .search .search_content .search_txt {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: #F1F1F1;
+  border-radius: 15px;
+  padding-left: 20px;
+}
+html footer,
+body footer {
+  margin-top: 25px;
+  width: 100%;
+  height: 94px;
+  background-color: #EFEFEF;
+}
+html footer .footer_link,
+body footer .footer_link {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+html footer .footer_link > a,
+body footer .footer_link > a {
+  float: left;
+  width: 33.33%;
+  height: 34px;
+  text-align: center;
+  line-height: 32px;
+  color: #000;
+  border-right: 1px solid #ccc;
+  font-size: 14px;
+}
+html footer .footer_link > a:last-child,
+body footer .footer_link > a:last-child {
+  border-right: none;
+}
+html footer .footer_link > a:last-child img,
+body footer .footer_link > a:last-child img {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+html footer .app_downLoad,
+body footer .app_downLoad {
+  text-align: center;
+  font-size: 12px;
+}
+html footer .app_downLoad .first_line,
+body footer .app_downLoad .first_line {
+  margin-top: 12px;
+}
+html footer .app_downLoad .first_line .download,
+body footer .app_downLoad .first_line .download {
+  color: red;
+}
+html footer .app_downLoad .first_line .mobile,
+body footer .app_downLoad .first_line .mobile {
+  color: #000;
+}
+.breadcrumb {
+  height: 40px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background-image: linear-gradient(to bottom, #ffffff, #dddddd);
+}
+.breadcrumb .select {
+  float: right;
+  width: 60px;
+  height: 30px;
+  line-height: 28px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin-top: 4px;
+  margin-right: 10px;
+  color: #000;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px #999;
+  background-image: linear-gradient(to bottom, #dddddd, #eeeeee);
+}
+.breadcrumb .link {
+  overflow: hidden;
+  line-height: 38px;
+  padding-left: 10px;
+}
+.breadcrumb .link a {
+  color: #000;
+}
+.product_list {
+  background-color: #fff;
+}
+.product_list li {
+  border-bottom: 1px solid #ccc;
+}
+.product_list li a {
+  display: block;
+  padding: 10px;
+}
+.product_list li a .img_box {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+.product_list li a .img_box img {
+  width: 100%;
+  height: 100%;
+}
+.product_list li a .product_des {
+  overflow: hidden;
+  padding-left: 10px;
+  line-height: 24px;
+  font-size: 16px;
+}
+.product_list li a .product_des .des_title {
+  min-height: 44px;
+  color: #000;
+}
+.product_list li a .product_des .price {
+  height: 25px;
+  margin-top: 4px;
+  margin-bottom: 3px;
+  color: #EB3900;
+}
+.product_list li a .product_des .bottom {
+  font-size: 12px;
+}
+.product_list li a .product_des .bottom .comment {
+  margin-left: 10px;
+}
+.paginator {
+  height: 50px;
+  padding-top: 10px;
+  background-color: #fff;
+}
+.paginator span {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+.paginator span button {
+  height: 36px;
+  width: 80px;
+  background-color: #E1E1E1;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  line-height: 36px;
+  box-shadow: 2px 2px 5px #ccc;
+}
+.paginator span #page {
+  height: 36px;
+  width: 90px;
+  border: 1px solid #ccc;
+  text-align: center;
+  outline: none;
+  padding-left: 25px;
+}

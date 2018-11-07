@@ -32,11 +32,12 @@ $(function () {
       success: function (info) {
         // console.log(info);
         // 将对象跟模板绑定
-        var htmlStr2 = template ('secondTpl',info);
+        var htmlStr2 = template('secondTpl', info);
         //将数据渲染到页面上
         $('.second_list').html(htmlStr2);
       }
     })
 
   })
+
 })
