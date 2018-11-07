@@ -8,7 +8,7 @@
   <meta name='viewport' content='width=device-width, user-scalable=no,
   initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
   <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="./css/bijia.css">
 </head>
 
 <body>
@@ -35,9 +35,41 @@
       <div class="breadcrumb">
         <a href="#" class="select">筛选</a>
         <div class="link">
-          <!-- 挖个坑 -->
+          <a href="index.html">首页</a>
+          >
+          <a href="category.html">全部分类</a>
+          >
+          <a href="javascript:history.back();">手机</a>
+          >
         </div>
       </div>
+
+      <!-- 产品详情 -->
+      <div class="product_detail">
+        <div class="detail_title">
+          <h3>奥林巴斯/OLYMPUS TG-4 1600万像素 数码相机</h3>
+        </div>
+        <div class="img_box">
+          <img src="./images/ic_kb.png" alt="">
+        </div>
+        <div class="collect">
+          <a href="#">收藏</a>
+        </div>
+      </div>
+
+      <!-- 比价购买 -->
+      <div class="byPrice">
+
+      </div>
+
+      <div class="comment">
+        <div class="comment_title">网友评价</div>
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+
 
 
 
@@ -62,23 +94,14 @@
     </footer>
   </div>
 
-  <!-- 准备路径导航模板 -->
-  <script type="text/html" id="linkTpl">
-    {{each result v i }}
-    <a href="index.html">首页</a>
-    >
-    <a href="category.html">全部分类</a>
-    >
-    <a href="#">{{v.category}}</a>
-    >
-    {{/each}}
-  </script>
 
-  
+
+
 
   <script src="./lib/jquery/jquery.min.js"></script>
   <script src="./lib/artTemplate/template-web.js"></script>
   <script src="./js/common.js"></script>
+  <script src="./js/bijia.js"></script>
 </body>
 
 </html>

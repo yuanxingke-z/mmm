@@ -85,7 +85,7 @@
     >
     <a href="category.html">全部分类</a>
     >
-    <a href="#">{{v.category}}</a>
+    <a id="name" data-categoryname={{v.category}} href="#">{{v.category}}</a>
     >
     {{/each}}
   </script>
@@ -94,7 +94,7 @@
   <script type="text/html" id="prolistTpl">
     {{each result v i }}
     <li class="product_item">
-        <a href="bijia.html?productId={{v.productId}}">
+        <a href="#" data-productid ={{v.productId}}>
           <div class="img_box">
             {{# v.productImg}}
           </div>

@@ -14,10 +14,9 @@ $(function () {
     },
     dataType: 'json',
     success: function (info) {
-      // console.log(info);
+      console.log(info);
       var htmlStr = template('linkTpl', info);
       $('.breadcrumb .link').html(htmlStr);
-
     }
   })
 
@@ -82,6 +81,15 @@ $(function () {
     }
     pageId++;
     render(pageId, categoryId);
+  })
+
+  // 点击商品栏的商品时将categoryName 和productId都传过去
+  $('.product_list').on('click', 'a', function () {
+    //获取分类详情的id 和分类名
+    var productId = $(this).data('productid');
+    var categoryName = $('#name').data('categoryname');
+    location.href = 'bijia.html?productId=' + productId + '&categoryName=' + categoryName;
+
   })
 
 
