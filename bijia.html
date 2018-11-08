@@ -31,48 +31,23 @@
     </section>
 
     <div class="main">
-      <!-- 路径导航 -->
-      <div class="breadcrumb">
-        <a href="#" class="select">筛选</a>
-        <div class="link">
-          <a href="index.html">首页</a>
-          >
-          <a href="category.html">全部分类</a>
-          >
-          <a href="javascript:history.back();">手机</a>
-          >
-        </div>
+
+      <div class="product">
+        <!-- 挖个坑1 -->
       </div>
 
-      <!-- 产品详情 -->
-      <div class="product_detail">
-        <div class="detail_title">
-          <h3>奥林巴斯/OLYMPUS TG-4 1600万像素 数码相机</h3>
-        </div>
-        <div class="img_box">
-          <img src="./images/ic_kb.png" alt="">
-        </div>
-        <div class="collect">
-          <a href="#">收藏</a>
-        </div>
-      </div>
-
-      <!-- 比价购买 -->
-      <div class="byPrice">
-
-      </div>
-
+      <!-- 评论 -->
       <div class="comment">
-        <div class="comment_title">网友评价</div>
-        <ul>
-          <li></li>
-          <li></li>
+        <div class="comment_title">
+          <h4>网友评价</h4>
+        </div>
+        <ul class="comment_content">
+          <!-- 挖个坑2 -->
         </ul>
       </div>
 
-
-
-
+      <!-- 更多评价 -->
+      <div class="more"><a href="#">查看更多评价</a></div>
 
     </div>
 
@@ -94,9 +69,61 @@
     </footer>
   </div>
 
+  <!-- 准备商品详情模板 -->
+  <script type="text/html" id="productDetail_Tpl">
+  {{each result v i}}
+   <!-- 路径导航 -->
+   <div class="breadcrumb">
+      <a href="#" class="select">筛选</a>
+      <div class="link">
+        <a href="index.html">首页</a>
+        >
+        <a href="category.html">全部分类</a>
+        >
+        <a href="javascript:history.back();">{{categoryname}}</a>
+        >
+      </div>
+    </div>
+    <!-- 产品详情 -->
+    <div class="product_detail">
+      <div class="detail_title">
+        <h3>{{v.productName}}</h3>
+      </div>
+      <div class="img_box">
+        {{# v.productImg}}
+      </div>
+      <div class="collect">
+        <a href="#">收藏</a>
+      </div>
+    </div>
+    <!-- 比价购买 -->
+    <div class="bijia_title">
+      <a href="#">比价购买</a>
+      <a href="#">产品参数</a>
+      <a href="#">评价(999+)</a>
+    </div>
+    <div class="byPrice">
+      {{# v.bjShop}}
+    </div>
+    <div class="tips">
+      * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+    </div>
+  {{/each}}
+</script>
 
-
-
+  <!-- 准备评论模板 -->
+<script type="text/html" id="commentTpl">
+  {{each result v i}}
+    <li>
+      <div class="user clearfix">
+        <span class="username fl">{{v.comName}}</span>
+        <span class="time fr">{{v.comTime}}</span>
+      </div>
+      <div class="from"><span>{{v.comFrom}}</span></div>
+      <p>{{v.comContent}}</p>
+    </li>
+  {{/each}}
+</script>
 
   <script src="./lib/jquery/jquery.min.js"></script>
   <script src="./lib/artTemplate/template-web.js"></script>

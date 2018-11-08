@@ -36,8 +36,8 @@
 //产品详情
 .product_detail {
   padding: 10px;
-  background-color: #fff;
   position: relative;
+  background-color: #F7F7F7;
 
   .detail_title {
       height: 200px;
@@ -76,5 +76,109 @@
       font-size: 12px;
 
     }
+  }
+}
+
+.bijia_title {
+  height: 34px;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  background-color: #FFBB00;
+  
+  a {
+    display: block;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    line-height: 32px;
+    color: #fff;
+    border-right: 1px solid red;
+    font-size: 14px;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+// 比价购买
+.byPrice {
+  table {
+    border-bottom: 1px solid #ccc;
+    a {
+      color: #000;
+      font-size: 16px;
+    }
+    .p_pic {
+      img {
+        width: 16px;
+        height: 16px;
+        margin:  0 auto;
+        margin-top: 12px;
+      }
+    }
+
+    .red {
+      color: #D10388;
+      text-align: right;
+      padding-right: 20px;
+      line-height: 40px;
+
+    }
+  }
+}
+
+.tips {
+  border-bottom: 3px solid #ccc;
+  line-height: 40px;
+  font-size: 12px;
+}
+// 用户评论
+.comment {
+  .comment_title {
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    background-color: #DBDBDB;
+    color: #000;
+  }
+
+  .comment_content {
+    background-color: #F7F7F7;
+
+    li {
+      border-bottom: 1px solid #ccc;
+      padding: 15px 10px 0 ;
+      font-size: 12px;
+      line-height: 18px;
+
+      .from {
+        text-align: right;
+      }
+
+      p {
+        text-indent:2em;
+        line-height: 22px;
+        text-align:justify;
+        margin-top: 6px;
+        color: #000;
+      }
+    }
+  }
+  
+}
+
+.more {
+  margin: 20px 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+  background-image: linear-gradient(to bottom, #eee,#ccc);
+  border-radius: 5px;
+
+  a {
+    display: block;
+    height: 100%;
+    color: #000;
   }
 }

@@ -154,8 +154,8 @@ body footer .app_downLoad .first_line .mobile {
 }
 .product_detail {
   padding: 10px;
-  background-color: #fff;
   position: relative;
+  background-color: #F7F7F7;
 }
 .product_detail .detail_title {
   height: 200px;
@@ -191,4 +191,87 @@ body footer .app_downLoad .first_line .mobile {
   line-height: 40px;
   color: #eee;
   font-size: 12px;
+}
+.bijia_title {
+  height: 34px;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  background-color: #FFBB00;
+}
+.bijia_title a {
+  display: block;
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  line-height: 32px;
+  color: #fff;
+  border-right: 1px solid red;
+  font-size: 14px;
+}
+.bijia_title a:last-child {
+  border-right: none;
+}
+.byPrice table {
+  border-bottom: 1px solid #ccc;
+}
+.byPrice table a {
+  color: #000;
+  font-size: 16px;
+}
+.byPrice table .p_pic img {
+  width: 16px;
+  height: 16px;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+.byPrice table .red {
+  color: #D10388;
+  text-align: right;
+  padding-right: 20px;
+  line-height: 40px;
+}
+.tips {
+  border-bottom: 3px solid #ccc;
+  line-height: 40px;
+  font-size: 12px;
+}
+.comment .comment_title {
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #DBDBDB;
+  color: #000;
+}
+.comment .comment_content {
+  background-color: #F7F7F7;
+}
+.comment .comment_content li {
+  border-bottom: 1px solid #ccc;
+  padding: 15px 10px 0 ;
+  font-size: 12px;
+  line-height: 18px;
+}
+.comment .comment_content li .from {
+  text-align: right;
+}
+.comment .comment_content li p {
+  text-indent: 2em;
+  line-height: 22px;
+  text-align: justify;
+  margin-top: 6px;
+  color: #000;
+}
+.more {
+  margin: 20px 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+  background-image: linear-gradient(to bottom, #eeeeee, #cccccc);
+  border-radius: 5px;
+}
+.more a {
+  display: block;
+  height: 100%;
+  color: #000;
 }
