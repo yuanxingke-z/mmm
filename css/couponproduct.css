@@ -142,127 +142,56 @@ header h3 {
   font-weight: bold;
   color: #fff;
 }
-.tab {
-  width: 100%;
-  background-color: #fff;
-  overflow: auto;
-  position: relative;
-}
-.tab ul {
-  width: 1000px;
-}
-.tab ul li {
-  float: left;
-}
-.tab ul li a {
-  display: block;
+.tips {
   height: 40px;
   line-height: 40px;
-  padding: 0 15px;
-  color: #000;
-}
-.tab .search {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 40px;
-  height: 40px;
-  background: #ffffff url('../images/icon_bar.png') no-repeat -23px -23px;
-  transform: scale(0.6);
-}
-.product_list {
-  max-width: 960px;
-  margin: 0 auto;
-}
-.product_list ul {
-  overflow: hidden;
-}
-.product_list ul li {
-  margin: 6px auto;
-  background-color: #fff;
-  padding: 10px;
-}
-.product_list ul li .img_box {
-  float: left;
-  width: 140px;
-  height: 130px;
-}
-.product_list ul li .img_box img {
-  width: 130px;
-  height: 130px;
-}
-.product_list ul li .right_des {
-  overflow: hidden;
-}
-.product_list ul li .right_des .des_title {
-  color: #000;
-  height: 28px;
-}
-.product_list ul li .right_des .price {
-  line-height: 40px;
-  font-size: 20px;
-  color: #FC353A;
-}
-.product_list ul li .right_des .price i {
-  font-size: 16px;
-}
-.product_list ul li .right_des .price em {
-  margin-left: 6px;
-  font-size: 14px;
-}
-.product_list ul li .right_des .price del {
-  font-size: 14px;
-  text-decoration: line-through;
-  margin-left: 10px;
+  font-size: 12px;
+  background-color: #F7F7F7;
+  text-align: center;
   color: #999;
 }
-.product_list ul li .right_des .num {
-  height: 24px;
-  font-size: 12px;
+.couponproduct_list {
+  background-color: #fff;
 }
-.product_list ul li .right_des .num span {
-  display: inline-block;
-  width: 80px;
-  height: 14px;
-  line-height: 14px;
-  background-color: pink;
-  text-align: center;
-  color: #fff;
-  margin-right: 10px;
-  border: 1px solid #FF5E5D;
-  border-radius: 16px;
-  position: relative;
+.couponproduct_list li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
 }
-.product_list ul li .right_des .num span::before {
-  content: '';
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  left: 0;
-  top: 0;
-  border-radius: 7px;
-  background-color: #FF5E5D;
-}
-.product_list ul li .right_des .num b {
-  font-weight: normal;
-  color: #FF5E5D;
-}
-.product_list ul li .right_des .link a:nth-child(1) {
+.couponproduct_list li .img_box {
   float: left;
-  height: 28px;
-  line-height: 28px;
-  border: 1px dashed #FF5E5D;
-  padding: 0 5px;
-  font-size: 12px;
-  color: #FF5E5D;
+  width: 120px;
+  height: 100px;
 }
-.product_list ul li .right_des .link a:nth-child(2) {
-  float: right;
-  height: 28px;
-  line-height: 28px;
-  background-color: #FF5E5D;
-  border-radius: 5px;
-  color: #fff;
+.couponproduct_list li .img_box img {
+  width: 100px;
+  height: 100px;
+}
+.couponproduct_list li .coupon_des {
+  overflow: hidden;
+  position: relative;
+  min-height: 100px;
+}
+.couponproduct_list li .coupon_des .des_text {
+  color: #333;
+  line-height: 20px;
+  text-align: justify;
+}
+.couponproduct_list li .coupon_des .price {
+  color: #000;
+  font-weight: bold;
+  line-height: 30px;
+}
+.couponproduct_list li .coupon_des .time {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
   font-size: 12px;
-  padding: 0 5px;
+  color: #EE7700;
+}
+.couponproduct_list li .more {
+  float: right;
+  width: 40px;
+  height: 100px;
+  background: url('../images/icon_bar.png') no-repeat -200px 0;
+  transform: rotate(180deg) scale(0.5);
 }

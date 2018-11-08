@@ -1,0 +1,87 @@
+@import './common.less';
+// 借用商品详情页头部的样式
+//覆盖原先共同的样式
+header {
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #F4483E !important;
+
+  .header_logo {
+    width: 50px;
+    height: 50px;
+    background: url('../images/icon_bar.png') no-repeat -92px 2px;
+    background-size: 220px 132px;
+  }
+
+  h3 {
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+
+.tips {
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  background-color: #F7F7F7;
+  text-align: center;
+  color: #999;
+}
+
+.couponproduct_list {
+  background-color: #fff;
+
+  li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+
+    .img_box {
+      float: left;
+      width: 120px;
+      height: 100px;
+
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    .coupon_des {
+      overflow: hidden;
+      position: relative;
+      min-height: 100px;
+
+      .des_text {
+        color: #333;
+        line-height: 20px;
+        text-align: justify;
+      }
+
+      .price {
+        color: #000;
+        font-weight: bold;
+        line-height: 30px;
+      }
+
+      .time {
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+        font-size: 12px;
+        color: #EE7700;
+      }
+    }
+
+    .more {
+      float: right;
+      width: 40px;
+      height: 100px;
+      background: url('../images/icon_bar.png') no-repeat -200px 0;
+      transform: rotate(180deg) scale(0.5);
+      
+    }
+  }
+}

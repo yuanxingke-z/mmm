@@ -8,7 +8,7 @@
   <meta name='viewport' content='width=device-width, user-scalable=no,
   initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
   <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="./css/baicaijia.css">
+  <link rel="stylesheet" href="./css/couponproduct.css">
 
 </head>
 
@@ -16,29 +16,18 @@
   <div class="mmm_container">
     <!-- 头部 -->
     <header>
-      <a class="header_logo" href="javascript:history.go(-1);">
-      </a>
-      <h3>白菜价-淘宝内部劵</h3>
-      <a class="header_app" href="#">
-        <img src="./images/header_app.png">
-      </a>
+      <!-- 挖个坑1 -->
     </header>
 
-    <!-- tab导航栏 -->
-    <div class="tab">
-      <ul class="clearfix">
-        <!-- 挖个坑1         -->
-      </ul>
-      <div class="search"></div>
-    </div>
+    <!-- 用餐提示 -->
+    <div class="tips">--点餐前出示手机中的优惠券，即可享受优惠--</div>
 
-    <div class="product_list">
+    <!-- 优惠券列表 -->
+    <div class="couponproduct_list">
       <ul>
-        <!-- 再挖个坑 -->
+        <!-- 挖个坑2 -->
       </ul>
     </div>
-
-
 
 
     <!-- 尾部 -->
@@ -59,36 +48,29 @@
     </footer>
   </div>
 
-  <!-- 准备tab导航栏模板 -->
-  <script type="text/html" id="tabTpl">
-    {{each result v i }}
-    <li><a data-titleid="{{v.titleId}}" href="#">{{v.title}}</a></li>
-    {{/each}}
+  <!-- 准备标题渲染模板 -->
+  <script type="text/html" id="titleTpl">
+    <a class="header_logo" href="javascript:history.go(-1);"></a>
+      <h3>{{couponTitle}}优惠券</h3>
+    <a class="header_app" href="#">
+        <img src="./images/header_app.png">
+    </a>
   </script>
 
-  <!-- 准备白菜价列表模板 -->
-  <script type="text/html" id="baicaijiaTpl">
+  <!-- 准备折扣券模板 -->
+  <script type="text/html" id="couponTpl">
     {{each result v i}}
     <li>
-      <div class="img_box">
-        {{# v.productImg}}
-      </div>
-      <div class="right_des">
-        <div class="des_title">
-          {{# v.productName}}
+        <div class="img_box">
+          {{# v.couponProductImg}}
         </div>
-        <div class="price">
-          {{# v.productPrice}}
+        <div class="more"></div>
+        <div class="coupon_des">
+          <p class="des_text txt-cut">{{v.couponProductName}}</p>
+          <div class="price">{{v.couponProductPrice}}</div>
+          <div class="time">{{v.couponProductTime}}</div>
         </div>
-        <div class="num">
-          {{# v.productCouponRemain}}
-        </div>
-        <div class="link clearfix">
-          {{# v.productCoupon}}
-          {{#v.productHref}}
-        </div>
-      </div>
-    </li>
+      </li>
     {{/each}}
   </script>
 
@@ -97,7 +79,7 @@
   <script src="./lib/jquery/jquery.min.js"></script>
   <script src="./lib/artTemplate/template-web.js"></script>
   <script src="./js/common.js"></script>
-  <script src="./js/baicaijia.js"></script>
+  <script src="./js/couponproduct.js"></script>
 </body>
 
 </html>
