@@ -1,16 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-
+  <!-- 设置视口 -->
+  <meta name='viewport' content='width=device-width, user-scalable=no,
+  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/discount.css">
 </head>
+
 <body>
-    我是折扣页面
-    <script>
+  <div class="mmm_container">
+    <!-- 头部 -->
+    <header>
+      <a class="header_logo" href="javascript:history.go(-1);">
+      </a>
+      <h3>国内折扣</h3>
+      <a class="header_app" href="#">
+        <img src="./images/header_app.png" >
+      </a>
+    </header>
+    
+    <!-- 折扣商品详情 -->
+    <div class="sale_product">
+        <!-- 挖个坑 -->
+    </div>
 
-      
 
-    </script>
+    <!-- 尾部 -->
+    <footer>
+      <div class="footer_link clearfix">
+        <a href="login.html" class="login">登录</a>
+        <a href="resign.html" class="resign">注册</a>
+        <a href="#top" class="backTop"><img src="./images/top.jpg" alt="">返回顶部</a>
+      </div>
+      <div class="app_downLoad">
+        <p class="first_line">
+          <a class="download" href="#">手机APP下载</a>
+          <a class="mobile" href="#">慢慢买手机版 </a>
+          -- 掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- 准备折扣商品详情模板 -->
+<script type="text/html" id="saleTpl">
+  {{each result v i }}
+  <div class="product_content">
+      <h3>{{v.productName}}</h3>
+      <h4>
+        <span>{{v.productFrom}}</span>
+        <span>{{v.productTime}}</span>
+        <span>{{v.productTips}}</span>
+      </h4>
+      <div class="product_des">
+        <div class="rightImg">{{#v.productImg}}</div>
+        <p>{{v.productInfo}}</p>
+        <p>{{v.productInfo1}}</p>
+        <div class="downImg">{{#v.productImg}}</div>
+      </div>
+      <div class="goBuy"><a href="#">前往购买</a></div>
+  </div>
+  <div class="code">
+    <img src="./images/mmbweixin2.png" alt="">
+  </div>
+  <div class="comment">{{#v.productComment}}</div>
+  {{/each}}
+</script>
+  
+
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/discount.js"></script>
 </body>
+
 </html>
