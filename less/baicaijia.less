@@ -1,0 +1,147 @@
+@import './common.less';
+// 借用商品详情页头部的样式
+//覆盖原先共同的样式
+header {
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #F4483E !important;
+
+  .header_logo {
+    width: 50px;
+    height: 50px;
+    background: url('../images/icon_bar.png') no-repeat -92px 2px;
+    background-size: 220px 132px;
+  }
+
+  h3 {
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+
+//tab导航栏
+.tab {
+  width: 100%;
+  background-color: #fff;
+  overflow: auto;
+  position: relative;
+
+
+  ul {
+    width: 1000px;
+
+    li {
+      float: left;
+      a {
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 15px;
+        color: #000;
+      }
+    }
+
+  }
+
+  .search {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: url('../images/icon_bar.png') no-repeat -23px -23px;
+    transform: scale(0.8);
+  }
+ 
+}
+
+.product_list {
+  max-width: 960px;
+  margin: 0 auto;
+
+  ul {
+    overflow: hidden;
+
+    li {
+      margin: 6px auto;
+      background-color: #fff;
+      padding: 10px;
+  
+        .img_box {
+          float: left;
+          width: 140px;
+          height: 130px;
+  
+          img {
+            width: 130px;
+            height: 130px;
+          }
+        }
+  
+        .right_des {
+          height: 130px;
+          overflow: hidden;
+          background-color: pink;
+
+          .des_title {
+            color: #000;
+            height: 28px;
+          }
+
+          .price {
+            line-height: 40px;
+            font-size: 20px;
+            color: #FC353A;
+
+            .first {
+              font-size: 16px;
+            }
+
+            .third {
+              font-size: 14px;
+              text-decoration: line-through;
+              margin-left: 10px;
+              color: #999;
+            }
+          }
+
+          .num {
+            height: 30px;
+            font-size: 12px;
+
+            span {
+              display: block;
+              width: 80px;
+              height: 12px;
+              background-color: pink;
+              text-align: center;
+              color: #fff;
+              margin-right: 10px
+            }
+          }
+          .link {
+            .paper {
+              float: left;
+              height: 28px;
+              line-height: 28px;
+              border: 1px dashed #FF5E5D;
+              padding: 0 5px;
+              font-size: 12px;
+            }
+            .order_link {
+              float: right;
+              height: 28px;
+              line-height: 28px;
+              background-color: #FF5E5D;
+              border-radius: 5px;
+              color: #fff;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
