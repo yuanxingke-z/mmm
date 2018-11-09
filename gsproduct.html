@@ -24,18 +24,22 @@
     </header>
 
     <!-- 店铺及地区分类 -->
-    <div class="gsproduct_title">
-      <a href="#">京东</a>
-      <a href="#">华北</a>
-      <a href="#">全部价格</a>
+    <nav>
+      <div class="gsproduct_title">
+        <a data-type="store" href="#">京东</a>
+        <a data-type="area" href="#">华北</a>
+        <a data-type="allPrice" href="#">全部价格</a>
+      </div>
       <ul>
-        <li><a href="#">京东</a></li>
-        <li><a href="#">一号店</a></li>
-        <li><a href="#">天猫超市</a></li>
+        <!-- 挖个坑1 -->
+      </ul>
+    </nav>
+
+    <div class="gsprodct_list">
+      <ul class="clearfix">
+        <!-- 再挖个坑2 -->
       </ul>
     </div>
-
-
 
     <!-- 尾部 -->
     <footer>
@@ -55,12 +59,35 @@
     </footer>
   </div>
 
-  <!-- 准备店铺和地区的模板 -->
+  <!-- 准备店铺的模板 -->
   <script type="text/html" id="storeTpl">
-
-  
+    {{each result v i }}
+       <li><a data-shopid="{{v.shopId }}" class="{{i === index ? 'checked':''}}" href="#">{{v.shopName}}</a></li>
+    {{/each}}
   </script>
 
+  <!-- 准备地区的渲染模板 -->
+  <script type="text/html" id="areaTpl">
+    {{each result v i }}
+      <li><a  data-areaid="{{v.areaId }}"  class="{{i === index ? 'checked':''}}" href="#">{{v.areaName}}</a></li>
+    {{/each}}
+  </script>
+
+  <!-- 准备凑单品的渲染模板 -->
+  <script type="text/html" id="productTpl">
+    {{each result v i}}
+        <li>
+          <a href="#">
+            <div class="img_box"><img src="{{v.productImg}}" alt=""></div>
+            <h4 class="one-txt-cut">{{v.productName}}</h4>
+            <div class="bottom">
+              <div class="price fl">{{v.productPrice}}</div>
+              <div class="add fr">去凑单</div>
+            </div>
+          </a>
+        </li>
+    {{/each}}
+  </script>
 
 
   <script src="./lib/jquery/jquery.min.js"></script>

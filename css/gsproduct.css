@@ -141,12 +141,14 @@ header h3 {
   font-weight: bold;
   color: #fff;
 }
-.gsproduct_title {
-  background-color: #fff;
-  height: 40px;
+nav {
   position: relative;
 }
-.gsproduct_title > a {
+nav .gsproduct_title {
+  background-color: #fff;
+  height: 40px;
+}
+nav .gsproduct_title > a {
   float: left;
   width: 33.33%;
   height: 100%;
@@ -155,7 +157,7 @@ header h3 {
   color: #000;
   font-size: 16px;
 }
-.gsproduct_title > a::after {
+nav .gsproduct_title > a::after {
   content: '';
   display: inline-block;
   width: 0;
@@ -165,25 +167,92 @@ header h3 {
   margin-left: 8px;
   vertical-align: baseline;
 }
-.gsproduct_title ul {
+nav ul {
   position: absolute;
   width: 100%;
   left: 0;
   top: 40px;
-  background-color: pink;
+  background-color: #fff;
   display: none;
+  z-index: 100;
 }
-.gsproduct_title ul:active {
+nav ul.active {
   display: block;
 }
-.gsproduct_title ul li {
-  border-top: 1px solid #ccc;
+nav ul li {
+  border-top: 1px solid #eee;
 }
-.gsproduct_title ul li a {
+nav ul li a {
   padding: 0 10px;
   display: block;
   height: 40px;
   line-height: 40px;
   font-size: 16px;
   color: #000;
+  position: relative;
+}
+nav ul li a.checked::after {
+  content: '√';
+  position: absolute;
+  right: 20px;
+  top: 0;
+  line-height: 40px;
+  color: #FF4400;
+  font-size: 16px;
+  transform: scaleX(2);
+}
+.gsprodct_list {
+  width: 98%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.gsprodct_list li {
+  float: left;
+  width: 49.5%;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.gsprodct_list li:nth-child(even) {
+  float: right;
+}
+.gsprodct_list li a {
+  display: block;
+  width: 100%;
+  min-height: 250px;
+  padding: 10px;
+  position: relative;
+}
+.gsprodct_list li a .img_box {
+  height: 174px;
+}
+.gsprodct_list li a .img_box img {
+  width: 174px;
+  height: 174px;
+  margin: 0 auto;
+}
+.gsprodct_list li a h4 {
+  color: #000;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.gsprodct_list li a .bottom {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  height: 28px;
+  padding: 0 10px;
+}
+.gsprodct_list li a .bottom .price {
+  color: #F8601D;
+  font-size: 20px;
+}
+.gsprodct_list li a .bottom .add {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 28px;
+  line-height: 28px;
+  background-color: #FF9501;
+  border-radius: 5px;
+  color: #fff;
 }
