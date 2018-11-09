@@ -144,9 +144,9 @@ header h3 {
 }
 .tab {
   width: 100%;
-  background-color: #fff;
-  overflow: auto;
   position: relative;
+  background-color: #fff;
+  overflow: hidden;
 }
 .tab ul {
   width: 1000px;
@@ -161,13 +161,19 @@ header h3 {
   padding: 0 15px;
   color: #000;
 }
-.tab .search {
+.tab .search_box {
   position: absolute;
   right: 0;
   top: 0;
   width: 40px;
   height: 40px;
+  z-index: 100;
+  background-color: #fff;
+}
+.tab .search_box .search {
+  height: 40px;
   background: #ffffff url('../images/icon_bar.png') no-repeat -23px -23px;
+  padding: 0;
   transform: scale(0.6);
 }
 .product_list {

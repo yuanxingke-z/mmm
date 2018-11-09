@@ -1,5 +1,5 @@
- // 复用的解析地址栏参数的方法
- function getSearch(k) {
+// 复用的解析地址栏参数的方法
+function getSearch(k) {
   // 获取地址栏参数
   var str = location.search; // ?key=%E9%B9%8F&age=18&desc=%E5%B8%85
 
@@ -26,3 +26,9 @@
 
   return obj[k];
 }
+
+// 点击返回按钮，动画返回顶部
+$(".backTop").click(function () {
+  $("html,body").stop().animate({ scrollTop: 0 }, 1000);
+
+})

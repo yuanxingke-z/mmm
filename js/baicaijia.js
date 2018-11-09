@@ -47,6 +47,13 @@ $(function () {
     render(titleId);
   })
 
+  var myScroll = new IScroll('.wrapper', {
+    scrollbars: true,
+    scrollX: true,
+    scrollY: false,
+    fadeScrollbars: true,
+    shrinkScrollbars: 'clip',
+  }); //初始化
 
 
 
