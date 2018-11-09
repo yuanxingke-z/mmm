@@ -32,3 +32,17 @@ $(".backTop").click(function () {
   $("html,body").stop().animate({ scrollTop: 0 }, 1000);
 
 })
+
+//发送第一个ajax时添加进度条
+$(document).ajaxStart(function () {
+  // 开启进度条
+  NProgress.start();
+});
+
+// 最后一个ajax发送完成后,隔一秒后关闭进度条
+$(document).ajaxStop(function () {
+  // 设置延迟器延时执行
+  setTimeout(function () {
+    NProgress.done();
+  }, 500)
+});
