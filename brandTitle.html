@@ -8,7 +8,7 @@
   <meta name='viewport' content='width=device-width, user-scalable=no,
   initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
   <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="./css/category.css">
+  <link rel="stylesheet" href="./css/brandTitle.css">
 </head>
 
 <body>
@@ -29,6 +29,22 @@
       </div>
       <button class="search_button">搜索</button>
     </section>
+
+    <!-- 路径导航 -->
+    <div class="breadcrumb">
+      <div class="link">
+        <a href="index.html">首页</a>
+        >
+        <a href="category.html">全部分类</a>
+        >
+      </div>
+    </div>
+
+    <!-- 热门品牌排行 -->
+    <div class="brandRank">
+      热门品牌排行
+    </div>
+
     <!-- 分类页导航 -->
     <div class="category_nav">
       <ul class="first_list">
@@ -58,27 +74,19 @@
   <script type="text/html" id="firstTpl">
     {{each result v i }}
       <li >
-        <a class="dropDown" data-titleid={{v.titleId}}  href="#">
-          <span>{{v.title}}</span>
+        <a href="brand.html?brandTitleId={{v.brandTitleId}}">
+          <span>{{v.brandTitle}}</span>
           <i class="down"></i>
         </a>
-        <ul class="second_list clearfix">
-            <!-- 再挖个坑 -->
-        </ul>
       </li>
      {{/each}}
   </script>
 
-  <!-- 准备二级分类列表模板 -->
-  <script type="text/html" id="secondTpl">
-    {{each result v i }}
-    <li><a href="productlist.html?categoryId={{v.categoryId}}">{{v.category}}</a></li>
-    {{/each}}
-  </script>
+
 
   <script src="./lib/jquery/jquery.min.js"></script>
   <script src="./lib/artTemplate/template-web.js"></script>
-  <script src="./js/category.js"></script>
+  <script src="./js/brandTitle.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 $(function () {
   //获取地址栏传递的id
-  var categoryId = getSearch('categoryid');
+  var categoryId = getSearch('categoryId');
   //pageid从1开始
   var pageId = 1;
   var pageNum;

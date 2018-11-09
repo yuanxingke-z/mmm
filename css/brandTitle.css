@@ -130,20 +130,6 @@ body footer .app_downLoad .first_line .mobile {
   border-bottom: 1px solid #ccc;
   background-image: linear-gradient(to bottom, #ffffff, #dddddd);
 }
-.breadcrumb .select {
-  float: right;
-  width: 60px;
-  height: 30px;
-  line-height: 28px;
-  text-align: center;
-  border: 1px solid #ccc;
-  margin-top: 4px;
-  margin-right: 10px;
-  color: #000;
-  border-radius: 5px;
-  box-shadow: 1px 1px 1px #999;
-  background-image: linear-gradient(to bottom, #dddddd, #eeeeee);
-}
 .breadcrumb .link {
   overflow: hidden;
   line-height: 38px;
@@ -152,127 +138,64 @@ body footer .app_downLoad .first_line .mobile {
 .breadcrumb .link a {
   color: #000;
 }
-.product_detail {
-  padding: 10px;
-  position: relative;
-  background-color: #F7F7F7;
-}
-.product_detail .detail_title {
-  height: 200px;
-}
-.product_detail .detail_title h3 {
-  font-size: 16px;
-  text-align: center;
-  color: #000;
-  line-height: 40px;
-}
-.product_detail .img_box {
-  width: 100%;
-}
-.product_detail .img_box img {
-  width: 170px;
-  height: 170px;
-  margin: 0 auto;
-}
-.product_detail .collect {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  width: 40px;
+.brandRank {
   height: 40px;
-  border-radius: 20px;
-  background-color: #95D800;
-}
-.product_detail .collect a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-align: center;
   line-height: 40px;
-  color: #eee;
-  font-size: 12px;
-}
-.bijia_title {
-  height: 34px;
-  border-top: 1px solid red;
-  border-bottom: 1px solid red;
-  background-color: #FFBB00;
-}
-.bijia_title a {
-  display: block;
-  float: left;
-  width: 33.33%;
-  text-align: center;
-  line-height: 32px;
-  color: #fff;
-  border-right: 1px solid red;
-  font-size: 14px;
-}
-.bijia_title a:last-child {
-  border-right: none;
-}
-.byPrice table {
-  border-bottom: 1px solid #ccc;
-}
-.byPrice table a {
-  color: #000;
+  padding-left: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  background-color: #EEEEEE;
+  color: #874604;
   font-size: 16px;
 }
-.byPrice table .p_pic img {
-  width: 16px;
-  height: 16px;
-  margin: 0 auto;
-  margin-top: 12px;
-}
-.byPrice table .red {
-  color: #D10388;
-  text-align: right;
-  padding-right: 20px;
-  line-height: 40px;
-}
-.tips {
-  border-bottom: 3px solid #ccc;
-  padding-left: 10px;
-  line-height: 40px;
-  font-size: 12px;
-}
-.comment .comment_title {
-  height: 34px;
-  line-height: 34px;
-  text-align: center;
-  background-color: #DBDBDB;
-  color: #000;
-}
-.comment .comment_content {
-  background-color: #F7F7F7;
-}
-.comment .comment_content li {
-  border-bottom: 1px solid #ccc;
-  padding: 15px 10px 0 ;
-  font-size: 12px;
-  line-height: 18px;
-}
-.comment .comment_content li .from {
-  text-align: right;
-}
-.comment .comment_content li p {
-  text-indent: 2em;
-  line-height: 22px;
-  text-align: justify;
-  margin-top: 6px;
-  color: #000;
-}
-.more {
-  margin: 20px 10px;
+.category_nav {
   border: 1px solid #ccc;
-  text-align: center;
-  line-height: 30px;
-  height: 30px;
-  background-image: linear-gradient(to bottom, #eeeeee, #cccccc);
   border-radius: 5px;
 }
-.more a {
+.category_nav .first_list {
+  background-color: #EDEDED;
+}
+.category_nav .first_list > li > a {
   display: block;
-  height: 100%;
+  height: 40px;
+  padding-left: 16px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.category_nav .first_list > li > a span {
+  line-height: 40px;
+  font-size: 16px;
   color: #000;
+  font-weight: bold;
+}
+.category_nav .first_list > li > a .down {
+  position: absolute;
+  right: 10px;
+  top: 14px;
+  width: 24px;
+  height: 12px;
+  background: url('../images/icon_bar.png') no-repeat -350px 0;
+}
+.category_nav .first_list > li:last-child {
+  border-bottom: none;
+}
+.category_nav .second_list {
+  display: none;
+  background-color: #F9F9F9;
+}
+.category_nav .second_list.active {
+  display: block;
+}
+.category_nav .second_list > li {
+  float: left;
+  width: 33.33%;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.category_nav .second_list > li a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #333;
 }

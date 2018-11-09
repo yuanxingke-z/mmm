@@ -124,155 +124,66 @@ html footer .app_downLoad .first_line .mobile,
 body footer .app_downLoad .first_line .mobile {
   color: #000;
 }
-.breadcrumb {
-  height: 40px;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  background-image: linear-gradient(to bottom, #ffffff, #dddddd);
+header {
+  padding-left: 50px;
+  padding-right: 50px;
 }
-.breadcrumb .select {
-  float: right;
-  width: 60px;
-  height: 30px;
-  line-height: 28px;
+header .header_logo {
+  width: 50px;
+  height: 50px;
+  background: url('../images/icon_bar.png') no-repeat -92px 2px;
+  background-size: 220px 132px;
+}
+header h3 {
+  line-height: 50px;
   text-align: center;
-  border: 1px solid #ccc;
-  margin-top: 4px;
-  margin-right: 10px;
-  color: #000;
-  border-radius: 5px;
-  box-shadow: 1px 1px 1px #999;
-  background-image: linear-gradient(to bottom, #dddddd, #eeeeee);
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
 }
-.breadcrumb .link {
-  overflow: hidden;
-  line-height: 38px;
-  padding-left: 10px;
-}
-.breadcrumb .link a {
-  color: #000;
-}
-.product_detail {
-  padding: 10px;
+.gsproduct_title {
+  background-color: #fff;
+  height: 40px;
   position: relative;
-  background-color: #F7F7F7;
 }
-.product_detail .detail_title {
-  height: 200px;
-}
-.product_detail .detail_title h3 {
-  font-size: 16px;
-  text-align: center;
-  color: #000;
-  line-height: 40px;
-}
-.product_detail .img_box {
-  width: 100%;
-}
-.product_detail .img_box img {
-  width: 170px;
-  height: 170px;
-  margin: 0 auto;
-}
-.product_detail .collect {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  background-color: #95D800;
-}
-.product_detail .collect a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  line-height: 40px;
-  color: #eee;
-  font-size: 12px;
-}
-.bijia_title {
-  height: 34px;
-  border-top: 1px solid red;
-  border-bottom: 1px solid red;
-  background-color: #FFBB00;
-}
-.bijia_title a {
-  display: block;
+.gsproduct_title > a {
   float: left;
   width: 33.33%;
+  height: 100%;
+  line-height: 40px;
   text-align: center;
-  line-height: 32px;
-  color: #fff;
-  border-right: 1px solid red;
-  font-size: 14px;
-}
-.bijia_title a:last-child {
-  border-right: none;
-}
-.byPrice table {
-  border-bottom: 1px solid #ccc;
-}
-.byPrice table a {
   color: #000;
   font-size: 16px;
 }
-.byPrice table .p_pic img {
-  width: 16px;
-  height: 16px;
-  margin: 0 auto;
-  margin-top: 12px;
+.gsproduct_title > a::after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-bottom: 5px solid #000;
+  margin-left: 8px;
+  vertical-align: baseline;
 }
-.byPrice table .red {
-  color: #D10388;
-  text-align: right;
-  padding-right: 20px;
-  line-height: 40px;
+.gsproduct_title ul {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 40px;
+  background-color: pink;
+  display: none;
 }
-.tips {
-  border-bottom: 3px solid #ccc;
-  padding-left: 10px;
-  line-height: 40px;
-  font-size: 12px;
-}
-.comment .comment_title {
-  height: 34px;
-  line-height: 34px;
-  text-align: center;
-  background-color: #DBDBDB;
-  color: #000;
-}
-.comment .comment_content {
-  background-color: #F7F7F7;
-}
-.comment .comment_content li {
-  border-bottom: 1px solid #ccc;
-  padding: 15px 10px 0 ;
-  font-size: 12px;
-  line-height: 18px;
-}
-.comment .comment_content li .from {
-  text-align: right;
-}
-.comment .comment_content li p {
-  text-indent: 2em;
-  line-height: 22px;
-  text-align: justify;
-  margin-top: 6px;
-  color: #000;
-}
-.more {
-  margin: 20px 10px;
-  border: 1px solid #ccc;
-  text-align: center;
-  line-height: 30px;
-  height: 30px;
-  background-image: linear-gradient(to bottom, #eeeeee, #cccccc);
-  border-radius: 5px;
-}
-.more a {
+.gsproduct_title ul:active {
   display: block;
-  height: 100%;
+}
+.gsproduct_title ul li {
+  border-top: 1px solid #ccc;
+}
+.gsproduct_title ul li a {
+  padding: 0 10px;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
   color: #000;
 }

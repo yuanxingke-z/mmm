@@ -1,0 +1,68 @@
+//引入公共样式
+@import './common.less';
+
+//路径导航
+.breadcrumb {
+  height: 40px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background-image: linear-gradient(to bottom ,#fff,#ddd);
+
+  .link {
+    overflow: hidden;
+    line-height: 38px;
+    padding-left: 10px;
+
+    a {
+      color: #000;
+    }
+  }
+}
+
+// 热门品牌排行
+.small_title {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: #EEEEEE;
+  color: #874604;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+// 十大品牌信息
+.brand_list {
+  background-color: #F7F7F7;
+
+  li {
+    border-bottom: 1px solid #ccc;
+
+    a {
+      display: block;
+      padding: 10px;
+
+      .number {
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        background-color: #F10E0E;
+        color: #fff;
+        margin-top: 6px;
+      }
+
+      .brand_info {
+        min-height: 50px;
+        overflow: hidden;
+        padding-left: 20px;
+
+        h4 {
+          font-size: 16px;
+          line-height: 30px;
+          color: #000;
+        }
+      }
+    }
+  }
+}

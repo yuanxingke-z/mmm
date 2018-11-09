@@ -8,7 +8,7 @@
   <meta name='viewport' content='width=device-width, user-scalable=no,
   initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
   <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="./css/category.css">
+  <link rel="stylesheet" href="./css/brand.css">
 </head>
 
 <body>
@@ -29,13 +29,39 @@
       </div>
       <button class="search_button">搜索</button>
     </section>
-    <!-- 分类页导航 -->
-    <div class="category_nav">
-      <ul class="first_list">
-        <!-- 挖个坑 -->
-      </ul>
+
+    <!-- 路径导航 -->
+    <div class="breadcrumb">
+      <div class="link">
+        <a href="index.html">首页</a>
+        >
+        <a href="category.html">全部分类</a>
+        >
+      </div>
     </div>
-  </div>
+
+    <!-- 热门品牌排行 -->
+    <div class="small_title brandRank">
+      哪个牌子好
+    </div>
+
+    <!-- 十大品牌信息 -->
+    <div class="brand_list">
+        <ul>
+            <!-- 挖个坑 -->
+        </ul>
+    </div>
+
+    <!-- 产量销量排行 -->
+    <div class="small_title outputRank">
+        产品销量排行
+      </div>
+
+      <!-- 最新评论 -->
+    <div class="small_title newComments">
+        最新评论
+      </div>
+  
   <!-- 尾部 -->
   <footer>
     <div class="footer_link clearfix">
@@ -54,31 +80,28 @@
   </footer>
   </div>
 
-  <!-- 准备分类页模板 -->
-  <script type="text/html" id="firstTpl">
+  <!-- 准备十大品牌渲染模板 -->
+  <script type="text/html" id="rankTpl">
     {{each result v i }}
-      <li >
-        <a class="dropDown" data-titleid={{v.titleId}}  href="#">
-          <span>{{v.title}}</span>
-          <i class="down"></i>
+     <li>
+        <a href="productlist.html?categoryId={{v.categoryId}}">
+          <div class="number fl">{{i}}</div>
+          <div class="brand_info">
+            <h4>{{v.brandName}}</h4>
+            <p>{{v.brandInfo}}</p>
+          </div>
         </a>
-        <ul class="second_list clearfix">
-            <!-- 再挖个坑 -->
-        </ul>
       </li>
-     {{/each}}
-  </script>
-
-  <!-- 准备二级分类列表模板 -->
-  <script type="text/html" id="secondTpl">
-    {{each result v i }}
-    <li><a href="productlist.html?categoryId={{v.categoryId}}">{{v.category}}</a></li>
     {{/each}}
   </script>
+ 
+
+
 
   <script src="./lib/jquery/jquery.min.js"></script>
   <script src="./lib/artTemplate/template-web.js"></script>
-  <script src="./js/category.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/brand.js"></script>
 </body>
 
 </html>

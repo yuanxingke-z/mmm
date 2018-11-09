@@ -142,6 +142,7 @@ body footer .app_downLoad .first_line .mobile {
   line-height: 40px;
   font-size: 16px;
   color: #000;
+  font-weight: bold;
 }
 .category_nav .first_list > li > a .down {
   position: absolute;
